@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Corinthia';
+    src: url(../../assets/fonts/Corinthia-Bold.ttf);
+}
+
+.quote-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    height: 250px;
+    color: white;
+    padding-right: 120px;
+    // background-blend-mode: multiply;
+    position: relative;
+
+    // use pseudo-element - makes it possible to add opacity to background img
+    &::before {    
+        content: "";
+        background-image: url('../../assets/imgs/blueprint-background3.png');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0%;
+        opacity: 0.1;
+    }
+
+    blockquote {
+        text-align: end;
+        font-size: 22px;
+        line-height: 1.5em;
+    }
+}
+
+.founder-wrap {
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 100%;
+        width: 40%;
+    }
+}
+
+.founder-info {
+    text-align: start;
+    margin-left: 20px;
+    position: relative;
+
+    h6 {
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.696);
+        margin-top: -15px;
+    }
+
+    &::before {
+        content: 'Oswald';
+        position: absolute;
+        font-size: 60px;
+        color: rgba(128, 128, 128, 0.305);
+        left: 55%;
+        top: 30%;
+        font-family: 'Corinthia';
+    }
+}
