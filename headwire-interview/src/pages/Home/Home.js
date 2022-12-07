@@ -1,8 +1,9 @@
 import './Home.scss'
 import Navbar from '../../components/Navbar/Navbar';
 import HomeCarousel from '../../components/HomeCarousel/HomeCarousel';
-import Sidenav from '../../components/SideNav/SideNav'
+import Sidenav from '../../components/SideNav/SideNav';
 import SideNav from '../../components/SideNav/SideNav';
+import Quote from '../../components/Quote/Quote';
 
 const Home = () => {
 
@@ -11,6 +12,7 @@ const Home = () => {
         <Navbar/>
         <HomeCarousel/>
         <SideNav/>
+        <Quote/>
         </div>
     );
 }
