@@ -1,0 +1,26 @@
+.scroll-wrap {
+    bottom: 10%;
+    right: 1%;
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    z-index: 800;
+    border-radius: 8px;
+    transition: transform .5s;
+    transform: translateY(100px);
+    
+    
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        bottom: 100%;
+        right: 10%;
+        cursor: pointer;
+        border: none;
+        background-color: rgb(172, 172, 172);
+    }
+}
