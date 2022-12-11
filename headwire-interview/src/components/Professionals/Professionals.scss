@@ -1,0 +1,105 @@
+.professional-section {
+    position: relative;
+    height: 600px;
+    background-color: rgba(128, 128, 128, 0.108);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+    &::before {
+        content: '';
+        background-image: url('../../assets/imgs/blueprint-background.png');
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+    }
+}
+
+.carousel {
+    margin-top: 3%;
+}
+
+.carousel-slides {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    cursor: pointer;
+}
+
+.card-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+  
+.card-wrap img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+  
+.card-wrap .card-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.341);
+    visibility: hidden;
+    text-transform: uppercase;
+
+    .professional-name, .plus, .job-title {
+        font-weight: 400;
+    }
+
+    .professional-name {
+        padding-top: 40px;
+    }
+
+    .plus {
+        font-size: 40px;
+    }
+
+    .job-title {
+        font-size: 13px;
+        padding-top: 40px;
+    }
+}
+  
+.card-wrap:hover .card-info {
+    visibility: visible;
+}
+
+.card-wrap:hover {
+    filter: grayscale(100%);
+}
+
+.slide-btns {
+    margin-bottom: -3%;
+    margin-top: 3%;
+
+    button {
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 50%;
+        margin: 0;
+        padding: 10;
+        height: 27px;
+        width: 27px;
+    }
+
+    .active {
+        border: 1px solid rgba(0, 0, 0, 0.553);
+        border-radius: 50%;
+        padding-bottom: 10px;
+    }
+}
+
