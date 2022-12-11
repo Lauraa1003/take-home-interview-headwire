@@ -1,0 +1,69 @@
+.service-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+    margin: 20px;
+    height: 300px;
+    width: 350px;
+    z-index: 1;
+    flex-grow: 1;
+    position: relative;
+   
+
+    &::before {
+        content: '';
+        background-image: url('../../assets/imgs/blueprint-background.png');
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+        background-position: -1000%;
+        background-size: cover;
+    }
+
+    img {
+        margin-top: -15px;
+    }
+
+    p {
+        width: 240px;
+        font-size: 15px;
+        font-weight: 300;
+        color: rgb(128, 128, 128);
+        margin-top: -10px;
+    }
+
+    h3 {
+        font-size: 22px;
+        font-weight: 300;
+        color: #1a1a1a;
+        margin-top: 15px;
+    }
+
+    button {
+        margin-top: 10px;
+        border: none;
+        background-color: transparent;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.692);
+        transition: all 0.3s ease-in-out;
+    }
+
+    //creates grey square besides button
+    button::before {
+        content: ''; 
+        display: inline-block; 
+        width: 20px; 
+        height: 13px; 
+        background-color: rgba(128, 128, 128, 0.211); 
+        margin-right: -13px; 
+        margin-bottom: -8px;
+    }
+
+    button:hover {
+        transform: scale(0.8);
+    }
+}
