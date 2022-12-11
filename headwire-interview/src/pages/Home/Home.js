@@ -1,4 +1,3 @@
-import "./Home.scss";
 import Navbar from "../../components/Navbar/Navbar";
 import HomeCarousel from "../../components/HomeCarousel/HomeCarousel";
 import SideNav from "../../components/SideNav/SideNav";
