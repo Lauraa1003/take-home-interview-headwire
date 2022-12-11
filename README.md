@@ -1,5 +1,3 @@
-# take-home-interview-headwire
-
 # Coding Challenge
 
 Recreate the provided design (code-challenge-mockup.png) as closely as possible. One week to complete the challenge and free to choose the tech stack.
