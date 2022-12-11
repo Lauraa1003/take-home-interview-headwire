@@ -26,7 +26,7 @@
     }
 
     //triangle icon styles
-    button:hover {
+    button:hover, a:hover {
          i {
             display: inline-block;
          }
@@ -121,4 +121,8 @@
     position: relative;
     right: 50px;
     margin-left: 10px;
+}
+
+.link {
+    font-size: 14px;
 }

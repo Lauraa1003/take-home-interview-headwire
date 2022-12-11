@@ -79,7 +79,7 @@ const Navbar = () => {
         </button>
 
         {/* onclick brings you to footer contact info */}
-        <a href="#footer" className="navBtn">
+        <a href="#footer" className="navBtn link">
           <p>CONTACTS</p>
           <i><BsTriangleFill size={8}/></i>
         </a>

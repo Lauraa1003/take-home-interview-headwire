@@ -1,6 +1,6 @@
 import './Footer.scss'
 import { BsTwitter, BsFacebook, BsLinkedin, BsInstagram, BsGeoAlt, BsEnvelopeOpen, BsTelephone, BsCursor} from "react-icons/bs";
-import logo from '../../assets/imgs/logo-footer.svg'
+import logo from '../../assets/imgs/logo-footer.svg';
 
 const Footer = () => {
     return (
